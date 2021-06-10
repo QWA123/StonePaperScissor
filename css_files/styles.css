@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selections {
+  margin-top: 5rem;
+  height: 100px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.selection {
+  font-size: 6rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+.selection:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 3rem;
+  margin-top: 3rem;
+  width: 500px;
+  /* justify-content: center; */
+  align-items: center;
+  justify-items: center;
+}
+.result-score {
+  font-size: 2rem;
+  /* background: red; */
+}
+.result-selection {
+  opacity: 0.6;
+  margin-top: 20px;
+  /* background: red; */
+}
+.result-selection.winner {
+  opacity: 1;
+  font-size: 3.8rem;
+}
